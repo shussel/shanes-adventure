@@ -1,0 +1,219 @@
+/* medium image size */
+@media only screen and (min-width: 600px) and (orientation: portrait), (min-width: 875px) and (min-height: 600px) {
+    #photo-full img {
+        max-width: 600px;
+        max-height: 64vh;
+    }
+    .photo-info {
+        align-items: center;
+    }
+    .photo-info div div {
+        display: inline;
+        margin-right: 3px;
+    }
+}
+
+/* photo page layout 2-columns begins (depending on orientation)  */
+@media only screen and (min-width: 650px) and (orientation : landscape),
+    only screen and (min-width: 1200px) and (orientation : portrait)  {
+
+    #page {
+        padding: 0 20px 50px 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    #header {
+        width: 180px;
+        flex: 0 0 180px;
+        position: sticky;
+        top: 10px;
+    }
+    #header-top {
+        background-color: transparent;
+        flex-direction: column;
+        height: auto;
+        position: static;
+    }
+    #site-identity {
+        flex: 0 0 55px;
+        margin: 0 auto 10px auto;
+    }
+    #main-menu {
+        position: static;
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+    }
+    .hamburger { display: none; }
+    #main-menu ul {
+        gap: 6px;
+        flex-direction: column;
+        width: 160px;
+    }
+    #main-menu a {
+        background-color: var(--menu-background-color);
+        border-radius: 15px 0 0 15px;
+        font-size: .8125em;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 36px;
+        width: 100%;
+    }
+    #header-bottom {
+        margin-top: 15px;
+        gap: 20px;
+        padding: 0;
+        align-items: center;
+    }
+    #header-bottom .page-description {
+        display: none;
+    }
+    #main-header .page-description {
+        display: block;
+    }
+    #top-ad {
+        border-radius: 12px;
+        align-self: center;
+        max-width: 350px;
+    }
+    #sub-menus {
+        gap: 20px;
+    }
+    .sub-menu {
+        flex-direction: column;
+    }
+    #gallery-menu {
+        display: flex;
+    }
+    #sa-subscribe-email {
+        flex: 0;
+        width: 200px;
+    }
+    #content {
+        gap: 15px;
+        flex: 1 0;
+    }
+    main {
+        padding-top: 36px;
+    }
+    #main-titlebar {
+        top: 0;
+        left: 215px;
+        right: 20px;
+        padding-left: 20px;
+    }
+    #main-title {
+        text-align: left;
+        font-size: .9375em;
+        padding: 0;
+        width: auto;
+        white-space: nowrap;
+    }
+    #footer {
+        padding-right: 20px;
+    }
+    #top-link {
+        order: 1;
+    }
+    #bottom-menu {
+        order: 3;
+    }
+    #bottom-menu ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        padding: 0 0 0 10px;
+        gap: 10px;
+    }
+    #bottom-menu a {
+        font-size: .8125em; /* 13px */
+        line-height: 1.846;
+        height: 24px;
+    }
+    #copyright {
+        order: 2;
+    }
+    #design-credit {
+        order: 4;
+    }
+}
+
+/* medium-large image size */
+@media only screen and (min-width: 800px) and (orientation: portrait), (min-width: 1050px) and (min-height: 730px) {
+    #photo-full img {
+        max-width: 800px;
+        max-height: 66vh;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+
+    .subscribe-block {
+        width: 550px;
+        flex-wrap: nowrap;
+    }
+    .sa-subscribe-form {
+        max-width: 100%;
+        width: 100%;
+    }
+    .sa-subscribe-form p {
+        flex: 0 0 250px;
+        margin: 0 5px 0 0;
+        text-wrap: nowrap;
+    }
+}
+
+/* photo layout 3 column size */
+@media only screen and (min-width: 1440px) and (orientation : portrait), only screen and (min-width: 1320px) and (orientation : landscape) {
+
+    #content {
+        gap: 20px;
+        flex-direction: row;
+    }
+    #main-titlebar {
+        right: 265px;
+    }
+    #sidebar {
+        margin-top: 20px;
+        flex: 0 0 225px;
+        padding: 0;
+        align-items: stretch;
+    }
+    #sidebar section {
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar section.potd {
+        width: 100%;
+    }
+    #sidebar .article-header {
+        flex-direction: column;
+    }
+}
+
+/* use largest image size */
+@media only screen and (min-width: 1720px) and (min-height: 1000px) {
+    #photo-full img {
+        max-width: 1200px;
+        max-height: 73vh;
+    }
+}
+
+/* Max screen */
+@media only screen and (min-width: 1920px) and (orientation: landscape) {
+
+    #main-titlebar {
+        top: 0;
+        left: 50%;
+        right: auto;
+        margin: 0 0 0 -735px;
+        width: 1440px;
+    }
+    #footer {
+        width: 1920px;
+        left: 50%;
+        right: auto;
+        margin: 0 0 0 -960px;
+    }
+}
